@@ -4,12 +4,8 @@ import java.util.List;
 
 public class BankCard {
 
-    private String name;
-    private int number;
-    private int validity;
-    private String fio;
-    private int code;
-    private int sum;
+    private String name, fio;
+    private int number, validity, code, sum;
 
     BankCard() {
         this.name = "name";
@@ -28,16 +24,12 @@ public class BankCard {
         this.sum = sum;
     }
 
-    public String getName() {
-        return name;
-    }
     public int getNumber() {
         return number;
     }
     public String getParams() {
         return name + "/" + number + "/" + validity + "/" + fio + "/" + code + "/" + sum + "\n";
     }
-
     public int codeToValidity (int code, List<BankCard> cards) {
         for (BankCard bankCard : cards) {
             if (bankCard.code == code) {
@@ -52,5 +44,4 @@ public class BankCard {
         }
         return false;
     }
-
 }

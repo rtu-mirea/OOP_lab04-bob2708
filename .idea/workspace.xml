@@ -2,23 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0944c228-283e-4a26-9e37-6464d0794f60" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AA.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AA.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lb4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lb4.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cards.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lb4/files/BankCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lb4/files/BankCard.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lb4/files/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lb4/files/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lb4/files/Task2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lb4/files/Task3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lb4/files/Task3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lb4/files/Task2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lb4/files/Task2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/randAccess.txt" beforeDir="false" afterPath="$PROJECT_DIR$/randAccess.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/files/BankCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/BankCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/files/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/Song.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/files/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/Task2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/files/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/Task3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Task2">
+  <component name="RunManager" selected="Application.Task3">
     <configuration name="ClassTextFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="files.ClassTextFile" />
       <module name="Lb4" />
@@ -110,10 +103,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Task2" />
         <item itemvalue="Application.Task3" />
-        <item itemvalue="Application.ClassTextFile" />
+        <item itemvalue="Application.Task2" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ClassTextFile" />
       </list>
     </recent_temporary>
   </component>

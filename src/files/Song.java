@@ -3,7 +3,6 @@ package files;
 import java.io.Serializable;
 
 public class Song implements Serializable {
-    //private static final long serialVersionUID = 1L;
     private String name;
     private int voices;
 
@@ -18,7 +17,6 @@ public class Song implements Serializable {
     }
 
     public String getName() {
-        //System.out.println(name);
         return name;
     }
 

@@ -23,7 +23,7 @@ public class Main {
                 System.out.println("txt-2 exists");
             }
 
-            File myFile3 = new File("D:\\ООП\\MyFile3.txt");
+            File myFile3 = new File("D:\\Project\\MyFile3.txt");
             myFile3.createNewFile();
             myFile3.deleteOnExit();
             boolean exist3 = myFile3.exists();
@@ -55,7 +55,7 @@ public class Main {
             System.out.println("Размер " + myFile3.getName() + " - " + myFile3.length() + " байт"); // файл
 
             // Упражнение 3
-            File myFile5 = new File("C:\\Users\\vova2\\Desktop\\2 курс\\ООП\\OOP_lab04-bob2708-master\\new_folder");
+            File myFile5 = new File("C:\\Users\\Vova\\IdeaProjects\\Lb4\\new_folder");
             myFile5.mkdir();
             myFile5.deleteOnExit();
             System.out.println("Содержимое папки " + myFile5.getParentFile().getName() + ":");
@@ -63,17 +63,15 @@ public class Main {
                 System.out.println(file);
             }
 
-            System.out.println("Содержимое папки " + myFile5.getParentFile().getName() + ":");
             int directorys = 0;
             for (File file: myFile5.getParentFile().listFiles()) {
-                System.out.println(file.getName());
                 if (file.isDirectory()) {directorys++;}
             }
 
             System.out.println("Количество директорий: " + directorys);
 
-            File myFile7 = new File("C:\\Users\\vova2\\Desktop\\2 курс\\ООП\\OOP_lab04-bob2708-master\\papka\\papka2");
-            File myFile8 = new File("C:\\Users\\vova2\\Desktop\\2 курс\\ООП\\OOP_lab04-bob2708-master\\papka");
+            File myFile7 = new File("C:\\Users\\Vova\\IdeaProjects\\Lb4\\papka\\papka2");
+            File myFile8 = new File("C:\\Users\\Vova\\IdeaProjects\\Lb4\\papka");
             myFile4.delete();
             myFile7.delete();
             myFile8.delete();

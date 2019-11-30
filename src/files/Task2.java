@@ -80,9 +80,6 @@ public class Task2 {
                 }
             }
             inputStream.close();
-//            for (BankCard bankCard : cards) {
-//                System.out.println(bankCard.getName());
-//            }
 
         } catch (IOException ex) {
             ex.getMessage();
@@ -166,9 +163,9 @@ public class Task2 {
                         break;
                     case 3:
                         randomAccess();
-                        System.out.println("Done!");
                         Date date = new Date();
-                        System.out.println(date.getDate());
+                        System.out.println("today is: " + date.getDate());
+                        System.out.println("Done!");
                         break;
                     default:
                         System.out.println("Wrong input!");

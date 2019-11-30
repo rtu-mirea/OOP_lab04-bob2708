@@ -11,37 +11,43 @@ public class Task2 {
 
     public static void input() {
         try {
+            String temp = "";
             Scanner in = new Scanner(System.in);
-            System.out.print("Your full name: ");
-            String fio = "" + in.nextLine();
-            System.out.print("Card name: ");
-            String name = "" + in.nextLine();
-            System.out.print("Card number: ");
-            int number = 0 + in.nextInt();
-            System.out.print("Card validity: ");
-            int validity = 0 + in.nextInt();
-            if (validity > 31 || validity < 1) {
-                System.out.println("Wrong date!");
-                return;
-            }
-            System.out.print("Your code: ");
-            int code = 0 + in.nextInt();
-            System.out.print("Sum of money: ");
-            int sum = 0 + in.nextInt();
-
-            for (BankCard bankCard : cards) {
-                if (bankCard.getNumber() == number) {
-                    System.out.println("Cards with same numbers is already exists!");
+            System.out.print("How many cards do you want to add? - ");
+            int cardsCount = 0 + in.nextInt();
+            for (; cardsCount > 0; cardsCount--) {
+                in.nextLine();
+                System.out.print("Your full name: ");
+                String fio = "" + in.nextLine();
+                System.out.print("Card name: ");
+                String name = "" + in.nextLine();
+                System.out.print("Card number: ");
+                int number = 0 + in.nextInt();
+                System.out.print("Card validity: ");
+                int validity = 0 + in.nextInt();
+                if (validity > 31 || validity < 1) {
+                    System.out.println("Wrong date!");
                     return;
                 }
+                System.out.print("Your code: ");
+                int code = 0 + in.nextInt();
+                System.out.print("Sum of money: ");
+                int sum = 0 + in.nextInt();
+
+                for (BankCard bankCard : cards) {
+                    if (bankCard.getNumber() == number) {
+                        System.out.println("Cards with same numbers is already exists!");
+                        return;
+                    }
+                }
+                temp += name + "/" + number + "/" + validity + "/" + fio + "/" + code + "/" + sum + "\n";
             }
-            String temp = name + "/" + number + "/" + validity + "/" + fio + "/" + code + "/" + sum + "\n";
-            char[] temp_ch = temp.toCharArray();
-            FileOutputStream outStream = new FileOutputStream(inFile());
-            for (char ch : temp_ch) {
-                outStream.write(ch);
-            }
-            outStream.close();
+                char[] temp_ch = temp.toCharArray();
+                FileOutputStream outStream = new FileOutputStream(inFile());
+                for (char ch : temp_ch) {
+                    outStream.write(ch);
+                }
+                outStream.close();
         } catch (IOException ex) {
             ex.getMessage();
         } catch (Exception e) {
@@ -52,17 +58,18 @@ public class Task2 {
     public static void output() {
         try {
             Scanner in = new Scanner(System.in);
-            System.out.print("Card name to skip: ");
-            String skip = in.nextLine();
+            System.out.print("Card name: ");
+            String target = in.nextLine();
             FileInputStream inputStream = new FileInputStream(inFile());
             String temp = "";
             int c;
+            System.out.println("Cards with name " + target + ":");
             while ((c = inputStream.read()) != -1) {
                 if (c == '\n') {
-
                     String[] temp_arr = temp.split("/");
-                    if (!temp_arr[0].equals(skip)) {
-                        System.out.println(temp_arr[0]);
+                    if (temp_arr[0].equals(target)) {
+                        System.out.printf("number - %s, validity - %s, fio - %s, code - %s, sum - %s\n",
+                                temp_arr[1],temp_arr[2], temp_arr[3],temp_arr[4],temp_arr[5]);
                         BankCard bankCard = new BankCard(temp_arr[0], Integer.parseInt(temp_arr[1]), Integer.parseInt(temp_arr[2]),
                                 temp_arr[3], Integer.parseInt(temp_arr[4]), Integer.parseInt(temp_arr[5]));
                         cards.add(bankCard);
@@ -141,6 +148,7 @@ public class Task2 {
             ex.getMessage();
         }
     }
+
     public static void main (String[]args) {
             Scanner in = new Scanner(System.in);
             System.out.println("0 - Exit\n1 - Input\n2 - Output\n3 - RandomAccess");

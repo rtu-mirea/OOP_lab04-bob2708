@@ -21,6 +21,7 @@ public class Task3 {
             }
             inputFirstStream.close();
             outputSecondStream.close();
+            System.out.println("Successful work with T1, T2 txts");
         } catch (IOException ex) {
             ex.getMessage();
         }
@@ -44,6 +45,7 @@ public class Task3 {
             }
             inb.close();
             outb.close();
+            System.out.println("Successful work with A, B txts");
         } catch (IOException ex) {
             ex.getMessage();
         }
@@ -51,15 +53,22 @@ public class Task3 {
     public static void quest3() {
         try {
             BufferedReader in = new BufferedReader(new InputStreamReader
+                    (new FileInputStream("AA.txt"), "UTF-8"));
+            BufferedReader iN = new BufferedReader(new InputStreamReader
                     (new FileInputStream("AA.txt"), "Cp1251"));
-//            BufferedReader in = new BufferedReader(new InputStreamReader
-//                    (new FileInputStream("txt.txt"), "UTF-8"));
-            System.out.println(Charset.defaultCharset().name());
+            System.out.println("Default charset: " + Charset.defaultCharset().name());
             String temp;
+            System.out.println("Reading AA.txt with UTF-8:");
             while ((temp = in.readLine()) != null) {
                 System.out.println(temp);
             }
+            System.out.println("Reading AA.txt with Cp1251:");
+            while ((temp = iN.readLine()) != null) {
+                System.out.println(temp);
+            }
+            iN.close();
             in.close();
+            System.out.println("Successful work with AA txt");
         } catch (IOException ex) {
             System.out.println("ERROR");
         }
